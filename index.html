@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Maia-Número de enlaces</title>
+  <link rel="icon"
+      type="image/ico"
+      href="img/maia.ico">
+   <style type="text/css">
+   body {background-color:white; font-family: sans-serif;}
+  label {color: maroon; display:block; padding:5px;}
+</style>
+</head>
+<body style="background-color: #E2A9F3;">
+<p><h3> Datos de formulario</h3></p>
+<font color="#3D136D" face="Century Gothic, sans-serif">
+<form id="frm1">
+    Nombre: <input type="text" name="name" id="name"><br>
+    Mail: <input type="text" name="email" id="email"><br>
+  </form> 
+  <button onclick="myFunction()">Mostrar</button>
+  <p id="mostrarMail"></p>
+  <p id="mostrarNombre"></p>
+  <script>
+    function myFunction() {
+    var mostrarMail= document.getElementById('mostrarMail');
+    var name= document.getElementById('name').value;
+    var email= document.getElementById('email').value;
+      
+    mostrarMail.innerHTML= "<li> El nombre es : "+ name + "</li>" +
+                           "<li> El email es : "+ email + "</li>" ;
+
+    }
+  </script>
+ </font>
+</body>
+</html>
